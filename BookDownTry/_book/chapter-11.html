@@ -176,7 +176,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="chapter-11" class="section level1">
-<h1><span class="header-section-number">12</span> Chapter</h1>
+<h1><span class="header-section-number">Chapter 12</span> Chapter</h1>
 <p><strong>Chi-Square Test of Independence<a href="chapter-17.html#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a></strong></p>
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/">Chapter 12 video</a>.</p>
 <p>The last statistical test that we studied (ANOVA) involved the relationship between a categorical explanatory variable (<span class="math inline">\(X\)</span>) and a quantitative response variable (<span class="math inline">\(Y\)</span>). Next, we will consider inferences about the relationships between two categorical variables, corresponding to case <span class="math inline">\(C \rightarrow C\)</span>.</p>
@@ -188,7 +188,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>The main justification provided by Oklahoma for the law was traffic safety. One of the 3 main pieces of data presented to the Court was the result of a “random roadside survey” that recorded information on gender and whether or not the driver had been drinking alcohol in the previous two hours. There were a total of 619 drivers under 20 years of age included in the survey.</p>
 <p>The following two-way table summarizes the observed counts in the roadside survey:</p>
 <!-- html table generated in R 3.2.2 by xtable 1.8-2 package -->
-<!-- Wed Jul  6 09:17:28 2016 -->
+<!-- Wed Jul  6 10:31:52 2016 -->
 <table border="1">
 <caption align="top">
 Table showing drinking status during the last two hours and gender
@@ -492,7 +492,7 @@ TobaccoDependence            (0,5]    (5,10]   (10,15]   (15,20]   (20,98]
 <span class="st">  </span><span class="kw">theme_bw</span>() +
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;Daily Smoking Frequency&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Fraction&quot;</span>) +
 <span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="kw">guide_legend</span>(<span class="dt">reverse =</span> <span class="ot">TRUE</span>))</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-57-1.png" width="960" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-57-1.png" width="960" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
 <pre><code>
     Pearson&#39;s Chi-squared test

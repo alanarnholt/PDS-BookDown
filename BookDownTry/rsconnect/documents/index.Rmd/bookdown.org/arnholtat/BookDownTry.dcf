@@ -1,0 +1,10 @@
+name: BookDownTry
+account: arnholtat
+server: bookdown.org
+appId: 139
+bundleId: 462
+url: https://bookdown.org/arnholtat/BookDownTry/
+when: 1467815792.36732
+asMultiple: FALSE
+asStatic: FALSE
+additionalFiles: _book/chapter.html

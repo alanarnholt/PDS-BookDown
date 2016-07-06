@@ -176,7 +176,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="chapter-10" class="section level1">
-<h1><span class="header-section-number">11</span> Chapter</h1>
+<h1><span class="header-section-number">Chapter 11</span> Chapter</h1>
 <p><strong>Analysis of Variance<a href="chapter-17.html#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></strong></p>
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/">Chapter 11 video</a>.</p>
 <p>In our description of hypothesis testing in the previous chapter, we started with case <span class="math inline">\(C \rightarrow Q\)</span>, where the explanatory variable/independent variable/predictor (<span class="math inline">\(X\)</span> = major depression) is categorical and the response variable/dependent variable/outcome (<span class="math inline">\(Y\)</span> = number of cigarettes smoked) is quantitative. Here is a similar example:</p>
@@ -258,7 +258,7 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <li>The sample mean frustration score of the 35 psychology majors is: <span class="math inline">\(\bar{x}_4 = 14.0285714\)</span></li>
 </ul>
 <p>We present two possible scenarios for our example (different data). In both cases, we construct side-by-side box plots (showing the distribution of the data including the range, lowest and highest values, the mean, etc.) four groups of frustration levels that have the same variation among their means. Thus, Scenario #1 and Scenario #2 (the actual values from <code>frustration</code>) both show data for four groups with the sample means 7.3142857, 11.7714286, 13.2, and 14.0285714.</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-40-1.png" width="672" style="display: block; margin: auto;" /><img src="_main_files/figure-html/unnamed-chunk-40-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-40-1.png" width="672" style="display: block; margin: auto;" /><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-40-2.png" width="672" style="display: block; margin: auto;" /></p>
 <p><strong>Review 11.2 Multiple Choice</strong></p>
 <p>Look carefully at the graphs of both scenarios. For which of the two scenarios would you be willing to believe that samples have been taken from four groups which have the same population means?</p>
 <p>A. Scenario 1</p>
@@ -280,13 +280,13 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <p>where we’re testing:</p>
 <p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span> versus <span class="math inline">\(H_a:\mu_i \neq \mu_j\)</span> for some <span class="math inline">\(i,j\)</span> or not all <span class="math inline">\(\mu\)</span>’s are equal.</p>
 <p>The following are two possible scenarios of the data (note in both scenarios the sample means are 24.9386037, 30.0584293, and 35.285865).</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-42-1.png" width="768" style="display: block; margin: auto;" /><img src="_main_files/figure-html/unnamed-chunk-42-2.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-42-1.png" width="768" style="display: block; margin: auto;" /><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-42-2.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Consider the <code>frustration</code> Data Frame Again</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> frustration, <span class="kw">aes</span>(<span class="dt">x =</span> Major, <span class="dt">y =</span> Frustration.Score)) +
 <span class="st">  </span><span class="kw">geom_boxplot</span>() +
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Frustration Score&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frustration Score by Major&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-43-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-43-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">RES &lt;-<span class="st"> </span><span class="kw">summary</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration))
 RES</code></pre></div>
 <pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)    
@@ -337,7 +337,7 @@ Psychology-Mathematics 0.8285714 -0.7835815 2.440724 0.5411978</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
 <span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">11.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
 <span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration)))</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-44-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-44-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar) <span class="co"># reset margins</span></code></pre></div>
 <p>Of the <span class="math inline">\(\binom{4}{2}=6\)</span> pairwise differences, Tukey’s HSD suggest that all except <code>Mathematics - English</code> and <code>Psychology - Mathematics</code> are significant.</p>
 <p><strong>Analysis of Variance Assignment</strong></p>
@@ -395,7 +395,7 @@ $DCScat
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
 <span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">8.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
 <span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(mod))</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-46-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-46-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar)</code></pre></div>
 <p>ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (4, 1310) = 31.95, p &lt; 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and &gt;20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).</p>
 <hr />

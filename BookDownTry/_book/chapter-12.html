@@ -176,7 +176,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="chapter-12" class="section level1">
-<h1><span class="header-section-number">13</span> Chapter</h1>
+<h1><span class="header-section-number">Chapter 13</span> Chapter</h1>
 <p><strong>Correlation Coefficient</strong></p>
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2015/10/05/chapter-13/">Chapter 13 Video</a>.</p>
 <p><span class="math inline">\(Q \rightarrow Q\)</span> is different in the sense that both variables (in particular the explanatory variable) are quantitative, and therefore, as you’ll discover, this case will require a different kind of treatment and tools. Let’s start with an example:</p>
@@ -230,7 +230,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
 <span class="st">  </span><span class="kw">theme_bw</span>()</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-59-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-59-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><strong>Comment</strong></p>
 <p>It is important to mention again that when creating a scatterplot, the explanatory variable should always be plotted on the horizontal <span class="math inline">\(X\)</span>-axis, and the response variable should be plotted on the vertical <span class="math inline">\(Y\)</span>-axis. If in a specific example we do not have a clear distinction between explanatory and response variables, each of the variables can be plotted on either axis.</p>
 <div id="interpreting-the-scatterplot" class="section level2">
@@ -281,14 +281,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-60-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-60-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>The direction of the relationship is negative, which makes sense in context, since as you get older your eyesight weakens, and in particular older drivers tend to be able to read signs only at lesser distances. An arrow drawn over the scatterplot illustrates the negative direction of this relationship:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>) +
 <span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> lm)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-61-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-61-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>The form of the relationship seems to be <strong>linear</strong>. Notice how the points tend to be scattered about the line. Although, as we mentioned earlier, it is problematic to assess the strength without a numerical measure, the relationship appears to be <strong>moderately strong</strong>, as the data is fairly tightly scattered about the line. Finally, all the data points seem to “obey” the pattern—there <strong>do not appear to be any outliers</strong>.</p>
 </div>
 <div id="the-correlation-coefficient" class="section level2">
@@ -334,7 +334,7 @@ sample estimates:
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>) +
 <span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> lm)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-62-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-62-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Since <span class="math inline">\(r &lt; 0\)</span>, it confirms that the direction of the relationship is negative (although we really didn’t need <span class="math inline">\(r\)</span> to tell us that). Since <span class="math inline">\(r\)</span> is relatively close to -1, it suggests that the relationship is moderately strong. In context, the negative correlation confirms that the maximum distance at which a sign is legible generally decreases with age. Since the value of <span class="math inline">\(r\)</span> indicates that the linear relationship is moderately strong, but not perfect, we can expect the maximum distance to vary somewhat, even among drivers of the same age.</p>
 <p><strong>Example</strong></p>
 <p><strong>Statistics Courses</strong></p>
@@ -354,7 +354,7 @@ sample estimates:
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;lightblue&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of cigarettes smoked daily&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number of nicotine dependence symptoms&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-63-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="Passion_Driven_Statistics_files/figure-html/unnamed-chunk-63-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms)</code></pre></div>
 <pre><code>
     Pearson&#39;s product-moment correlation
