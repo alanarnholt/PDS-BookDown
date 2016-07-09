@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-13.html">
 <link rel="next" href="chapter-15.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -177,7 +184,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="chapter-14" class="section level1">
 <h1><span class="header-section-number">Chapter 15</span> Chapter</h1>
-<p><strong>Linear Regression: Summarizing the Pattern of the Data with a Line<a href="chapter-17.html#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a></strong></p>
+<p><strong>Linear Regression: Summarizing the Pattern of the Data with a Line<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a></strong></p>
 <p>So far we’ve used the scatterplot to describe the relationship between two quantitative variables, and in the special case of a linear relationship, we have supplemented the scatterplot with the correlation (<span class="math inline">\(r\)</span>). The correlation, however, doesn’t fully characterize the linear relationship between two quantitative variables—it only measures the strength and direction. We often want to describe more precisely how one variable changes with the other (by “more precisely,” we mean more than just the direction), or predict the value of the response variable for a given value of the explanatory variable. In order to be able to do that, we need to summarize the linear relationship with a line that best fits the linear pattern of the data. In the remainder of this section, we will introduce a way to find such a line, learn how to interpret it, and use it (cautiously) to make predictions.</p>
 <p>Again, let’s start with a motivating example:</p>
 <p>Earlier, we examined the linear relationship between the age of a driver and the maximum distance at which a highway sign was legible, using both a scatterplot and the correlation coefficient. Suppose a government agency wanted to predict the maximum distance at which the sign would be legible for 60-year-old drivers, and thus make sure that the sign could be used safely and effectively.</p>
@@ -314,6 +321,12 @@ b</code></pre></div>
 <hr />
 
 </div>
+<div class="footnotes">
+<hr />
+<ol start="10">
+<li id="fn10"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85ba80020ca600a81f9419678a69" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85ba80020ca600a81f9419678a69</a><a href="chapter-14.html#fnref10">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -322,7 +335,7 @@ b</code></pre></div>
 <a href="chapter-13.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-15.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -358,7 +371,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

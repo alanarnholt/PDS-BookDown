@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-11.html">
 <link rel="next" href="chapter-13.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -181,7 +188,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2015/10/05/chapter-13/">Chapter 13 Video</a>.</p>
 <p><span class="math inline">\(Q \rightarrow Q\)</span> is different in the sense that both variables (in particular the explanatory variable) are quantitative, and therefore, as you’ll discover, this case will require a different kind of treatment and tools. Let’s start with an example:</p>
 <p><strong>Example</strong></p>
-<p><strong>Highway Signs</strong><a href="chapter-17.html#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></p>
+<p><strong>Highway Signs</strong><a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></p>
 <p>A Pennsylvania research firm conducted a study in which 30 drivers (of ages 18 to 82 years old) were sampled, and for each one, the maximum distance (in feet) at which he/she could read a newly designed sign was determined. The goal of this study was to explore the relationship between a driver’s age and the maximum distance at which signs were legible, and then use the study’s findings to improve safety for older drivers. (Reference: Utts and Heckard, Mind on Statistics (2002). Originally source: Data collected by Last Resource, Inc, Bellfonte, PA.)</p>
 <p>Since the purpose of this study is to explore the effect of age on maximum legibility distance,</p>
 <ul>
@@ -376,6 +383,12 @@ r</code></pre></div>
 
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="8">
+<li id="fn8"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85a180020ca600863541d4c89219" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85a180020ca600863541d4c89219</a><a href="chapter-12.html#fnref8">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -384,7 +397,7 @@ r</code></pre></div>
 <a href="chapter-11.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-13.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -420,7 +433,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

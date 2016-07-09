@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-9.html">
 <link rel="next" href="chapter-11.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -177,7 +184,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="chapter-10" class="section level1">
 <h1><span class="header-section-number">Chapter 11</span> Chapter</h1>
-<p><strong>Analysis of Variance<a href="chapter-17.html#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></strong></p>
+<p><strong>Analysis of Variance<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></strong></p>
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/">Chapter 11 video</a>.</p>
 <p>In our description of hypothesis testing in the previous chapter, we started with case <span class="math inline">\(C \rightarrow Q\)</span>, where the explanatory variable/independent variable/predictor (<span class="math inline">\(X\)</span> = major depression) is categorical and the response variable/dependent variable/outcome (<span class="math inline">\(Y\)</span> = number of cigarettes smoked) is quantitative. Here is a similar example:</p>
 <p><strong>GPA and Year in College</strong></p>
@@ -402,6 +409,12 @@ $DCScat
 
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="6">
+<li id="fn6"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60</a><a href="chapter-10.html#fnref6">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -410,7 +423,7 @@ $DCScat
 <a href="chapter-9.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-11.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -446,7 +459,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

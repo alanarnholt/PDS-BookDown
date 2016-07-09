@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter.html">
 <link rel="next" href="chapter-2.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -196,11 +203,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <img src="graphics/excodebook.jpg" alt="" />
 
 </div>
-<p><strong>Selecting A Data Set</strong> At this point, you should review the available codebooks for the data set that most interests you. The <a href="https://github.com/alanarnholt/PDS">PDS</a><a href="chapter-17.html#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> R package has the codebooks and data sets for this course.</p>
+<p><strong>Selecting A Data Set</strong> At this point, you should review the available codebooks for the data set that most interests you. The <a href="https://github.com/alanarnholt/PDS">PDS</a><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> R package has the codebooks and data sets for this course.</p>
 <p><strong>Selecting A Data Set Assignment</strong> Select a data set that you will work with. Add the abbreviated title of that data set (i.e. AddHealth, NESARC, Mars Crater, IPEDS, or OOL) to the README file of your GitHub repository.</p>
 <hr />
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p><a href="https://github.com/alanarnholt/PDS" class="uri">https://github.com/alanarnholt/PDS</a><a href="chapter-1.html#fnref2">↩</a></p></li>
+</ol>
 </div>
             </section>
 
@@ -210,7 +223,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <a href="chapter.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-2.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -246,7 +259,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

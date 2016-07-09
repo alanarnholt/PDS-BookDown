@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-12.html">
 <link rel="next" href="chapter-14.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -179,7 +186,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">Chapter 14</span> Chapter</h1>
 <p><strong>Moderation</strong></p>
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2015/08/25/chapter-14/">Chapter 14 Video</a>.</p>
-<p>In statistics and regression analysis, <strong>moderation</strong> occurs when the relationship between two variables depends on a third variable. The third variable is referred to as the <strong>moderator variable</strong> or simply the <strong>moderator</strong>. The effect of a moderating variable is characterized statistically as an interaction; that is, a categorical (e.g., sex, race, class) or quantitative (e.g., level of reward) variable that affects the direction and/or strength of the relation between dependent and independent variables. Specifically within a correlational analysis framework, a moderator is a third variable that affects the zero-order correlation between two other variables, or the value of the slope of the dependent variable on the independent variable. In analysis of variance (ANOVA) terms, a basic moderator effect can be represented as an interaction between a focal independent variable and a factor that specifies the appropriate conditions for its operation.<a href="chapter-17.html#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a></p>
+<p>In statistics and regression analysis, <strong>moderation</strong> occurs when the relationship between two variables depends on a third variable. The third variable is referred to as the <strong>moderator variable</strong> or simply the <strong>moderator</strong>. The effect of a moderating variable is characterized statistically as an interaction; that is, a categorical (e.g., sex, race, class) or quantitative (e.g., level of reward) variable that affects the direction and/or strength of the relation between dependent and independent variables. Specifically within a correlational analysis framework, a moderator is a third variable that affects the zero-order correlation between two other variables, or the value of the slope of the dependent variable on the independent variable. In analysis of variance (ANOVA) terms, a basic moderator effect can be represented as an interaction between a focal independent variable and a factor that specifies the appropriate conditions for its operation.<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a></p>
 <p><strong>Examples:</strong></p>
 <p>I have hypotheses about the association between smoking quantity and nicotine dependence for individuals with and without depression (the moderator). For example, for those with depression, any amount of smoking may indicate substantial risk for nicotine dependence (i.e. at both low and high levels of daily smoking), while among those without depression, smoking quantity might be expected to be more clearly associated with likelihood of experiencing nicotine dependence (i.e. the more one smokes, the more likely they are to be nicotine dependent). In other words, I am hypothesizing a non-significant association between smoking and nicotine dependence for individuals with depression and a significant, positive association between smoking and nicotine dependence for individuals without depression.</p>
 <p>To test this, I can run two ANOVA tests, one examining the association between nicotine dependence (categorical) and level of smoking (quantitative) for those with depression and one examining the association between nicotine dependence (categorical) and level of smoking (quantitative) for those without depression.</p>
@@ -268,6 +275,12 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <hr />
 
 </div>
+<div class="footnotes">
+<hr />
+<ol start="9">
+<li id="fn9"><p><a href="https://en.wikipedia.org/wiki/Moderation_(statistics)" class="uri">https://en.wikipedia.org/wiki/Moderation_(statistics)</a><a href="chapter-13.html#fnref9">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -276,7 +289,7 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <a href="chapter-12.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-14.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -312,7 +325,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

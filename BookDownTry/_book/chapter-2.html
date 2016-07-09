@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-1.html">
 <link rel="next" href="chapter-3.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -177,7 +184,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="chapter-2" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Chapter</h1>
-<p><strong>Data Architecture<a href="chapter-17.html#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>—What do we really mean by data?</strong></p>
+<p><strong>Data Architecture<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>—What do we really mean by data?</strong></p>
 <p>Data are pieces of information about individuals or observations organized into variables. By an <em>individual</em> or <em>observation</em>, we mean a particular person or object. By a <em>variable</em>, we mean a particular characteristic of the individual or observation.</p>
 <p>A dataset is a collection of information, usually presented in tabular form. Each column represents a particular <em>variable</em>. Each row corresponds to a given individual (or <em>observation</em>) within the dataset.</p>
 <p>Relying on datasets, statistics pulls all of the behavioral, physical and social sciences together. It’s arguably the one language that we all have in common. While you may think that data is very, very different from discipline to discipline, it is not. What you measure is different, and your research question is obviously dramatically different; whom you observe and whom you collect data from – or what you collect data from – can be very different, but once you have the data, approaches to analyzing it statistically are quite similar regardless of individual discipline.</p>
@@ -235,6 +242,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <hr />
 
 </div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b</a><a href="chapter-2.html#fnref3">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -243,7 +256,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <a href="chapter-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-3.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -279,7 +292,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

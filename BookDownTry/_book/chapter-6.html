@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-5.html">
 <link rel="next" href="chapter-7.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -178,7 +185,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="chapter-6" class="section level1">
 <h1><span class="header-section-number">Chapter 7</span> Chapter</h1>
 <div id="data-management" class="section level2">
-<h2><span class="header-section-number">7.1</span> Data Management<a href="chapter-17.html#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></h2>
+<h2><span class="header-section-number">7.1</span> Data Management<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></h2>
 <p>Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.</p>
 <p><strong>EXAMPLE:</strong></p>
 <p>A random sample of 1,200 U.S. college students were asked the following questions as part of a larger survey: “What is your perception of your own body? Do you feel that you are overweight, underweight, or about right?” The following table shows part of the data (5 of the 1200 observations);</p>
@@ -370,6 +377,12 @@ nesarc$AlcoholAD &lt;-<span class="st"> </span><span class="kw">factor</span>(ne
 
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="4">
+<li id="fn4"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582</a><a href="chapter-6.html#fnref4">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -378,7 +391,7 @@ nesarc$AlcoholAD &lt;-<span class="st"> </span><span class="kw">factor</span>(ne
 <a href="chapter-5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-7.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -414,7 +427,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

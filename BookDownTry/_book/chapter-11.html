@@ -8,10 +8,17 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Passion Driven Statistics">
-  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.0.77 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
   
   
   
@@ -24,7 +31,6 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +40,7 @@ MathJax.Hub.Config({
 <link rel="prev" href="chapter-10.html">
 <link rel="next" href="chapter-12.html">
 
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
@@ -177,7 +184,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="chapter-11" class="section level1">
 <h1><span class="header-section-number">Chapter 12</span> Chapter</h1>
-<p><strong>Chi-Square Test of Independence<a href="chapter-17.html#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a></strong></p>
+<p><strong>Chi-Square Test of Independence<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a></strong></p>
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/">Chapter 12 video</a>.</p>
 <p>The last statistical test that we studied (ANOVA) involved the relationship between a categorical explanatory variable (<span class="math inline">\(X\)</span>) and a quantitative response variable (<span class="math inline">\(Y\)</span>). Next, we will consider inferences about the relationships between two categorical variables, corresponding to case <span class="math inline">\(C \rightarrow C\)</span>.</p>
 <p>In our graphing, we have already summarized the relationship between two categorical variables for a given data set, without trying to generalize beyond the sample data.</p>
@@ -188,7 +195,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>The main justification provided by Oklahoma for the law was traffic safety. One of the 3 main pieces of data presented to the Court was the result of a “random roadside survey” that recorded information on gender and whether or not the driver had been drinking alcohol in the previous two hours. There were a total of 619 drivers under 20 years of age included in the survey.</p>
 <p>The following two-way table summarizes the observed counts in the roadside survey:</p>
 <!-- html table generated in R 3.2.2 by xtable 1.8-2 package -->
-<!-- Wed Jul  6 10:31:52 2016 -->
+<!-- Sat Jul  9 15:50:09 2016 -->
 <table border="1">
 <caption align="top">
 Table showing drinking status during the last two hours and gender
@@ -564,6 +571,12 @@ X-squared = 2.1619, df = 1, p-value = 0.1415</code></pre>
 
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="7">
+<li id="fn7"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677</a><a href="chapter-11.html#fnref7">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -572,7 +585,7 @@ X-squared = 2.1619, df = 1, p-value = 0.1415</code></pre>
 <a href="chapter-10.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="chapter-12.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
-<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -608,7 +621,17 @@ gitbook.start({
 });
 </script>
 
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
