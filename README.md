@@ -2,6 +2,6 @@
 Alan Arnholt  
 7/11/2016  
 
-This is a first attempt to render Passion Driven Statistics (PDS) used at Appalachian State Univeristy with bookdown.
+This is an experiment to render [*Passion Driven Statistics*](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html) with [bookdown](https://bookdown.org/yihui/bookdown/).
 
-* Click here to view the bookdown version of [PDS](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html) 
+* The [bookdown](https://bookdown.org/yihui/bookdown/) version of [*Passion Driven Statistics*](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html) used at Appalachian State University

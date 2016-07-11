@@ -1,8 +1,8 @@
 ---
-title: "PDS-bookdown"
+title: "PDS-bookdown repository"
 author: "Alan Arnholt"
 date: "7/11/2016"
 output: html_document
 ---
 
-This is a test. Link to [PDS in bookdown - very beta still](./BookDownTry/book/overview.html)
+The [bookdown](https://bookdown.org/yihui/bookdown/) version of [Passion Driven Statistics](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html)
