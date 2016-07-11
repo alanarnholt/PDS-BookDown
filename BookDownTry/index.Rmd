@@ -1,19 +1,15 @@
 ---
-title: "Passion Driven Statistics"
-author: Materials compiled by Lisa Dierker and modified for use with R and GitHub
-  at Appalachian State University by Alan T. Arnholt
-date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
+title: "[Passion Driven Statistics](http://www.wesleyan.edu/qac/curriculum/resources/index.html)"
+author: "Modified for use with [R,](https://www.r-project.org/) [GitHub,](https://github.com/) and [Zotero](https://www.zotero.org/)"
+date: 'Last updated: `r format(Sys.time(), "%B %d, %Y")`'
 output:
   bookdown::gitbook: default
 knit: bookdown::render_book
-resource_files:
-- _book/chapter.html
-rmd_files:
-- index.Rmd
-- copyright.Rmd
 documentclass: book
+css: "./CSS/style.css"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning = FALSE, message = FALSE)
 ```
+

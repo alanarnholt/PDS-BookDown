@@ -1,7 +1,5 @@
 
-# Chapter 
-
-**Chi-Square Test of Independence^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677]**
+# Chi-Square Test of Independence^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677]
 
 Please watch the [Chapter 12 video](http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/).
 

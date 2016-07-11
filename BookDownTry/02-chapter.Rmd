@@ -1,7 +1,5 @@
 
-# Chapter
-
-## Data Sets
+# Data Sets
 
 Please watch the [Chapter 02 video](http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/).
 
@@ -20,9 +18,9 @@ A full list will be presented in class. Here are a few examples:
 
 **[Outlook On Life Surveys (OOL)](http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/35348?q=outlook+on+LIfe&amp;searchSource=find-analyze-home&amp;sortBy=)**
 
-## Code Books
+**Code Books**
 
-Before accessing any data, you will be reviewing the available codebooks (sometimes called “data dictionaries”). Codebooks commonly offer complete information regarding the data set (e.g. general topics addressed, questions and/or measurements used, and in some cases the frequency of responses or values). Reviewing a code book is always the first step in research based on existing data since 1) code books can be used to generate research questions; and 2) data is generally useless and uninterpretable without it. 
+Before accessing any data, you will be reviewing the available codebooks (sometimes called **data dictionaries**). Codebooks commonly offer complete information regarding the data set (e.g. general topics addressed, questions and/or measurements used, and in some cases the frequency of responses or values). Reviewing a code book is always the first step in research based on existing data since 1) code books can be used to generate research questions; and 2) data is generally useless and uninterpretable without it. 
 
 The code book describes how the data are arranged in the computer file or files, what the various numbers and letters mean, and any special instructions on how to use the data properly. Like any other kind of book, some codebooks are better than others.
 

@@ -1,8 +1,6 @@
 
 
-# Chapter 
-
-**Analysis of Variance^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60]**
+# Analysis of Variance^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60]
 
 Please watch the [Chapter 11 video](http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/).
 

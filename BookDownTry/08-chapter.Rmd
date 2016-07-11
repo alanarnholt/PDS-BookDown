@@ -1,6 +1,6 @@
 
 
-# Chapter 
+# Graphing: One Variable at a Time 
 
 **One Categorical Variable**
 

@@ -1,8 +1,6 @@
 
 
-# Chapter 
-
-## Sampling and Designing Studies
+# Sampling and Designing Studies
 
 Suppose you want to determine the musical preferences of all students at your university, based on a sample of students. Here are some examples of the many possible ways to pursue this problem.^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b868a80020ca600eda22f1586f085]
 

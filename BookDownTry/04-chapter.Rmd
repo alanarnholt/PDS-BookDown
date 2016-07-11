@@ -1,8 +1,6 @@
 
 
-# Chapter 
-
-## Conducting a Literature Review
+# Conducting a Literature Review
 
 
 At this point you have (1) generated a personal codebook reflecting variables of interest to you from your data set; and (2) selected an association that you would like to test. You are now ready to conduct a literature review using **primary source** journal articles (i.e. those reporting original research findings).
@@ -17,7 +15,8 @@ It is important to identify and review primary sources either through your on-li
 
 Note that as you read the literature, there should be an exchange between your research question and what you are learning. **The literature review may cause you to add to the complexity of your research question, further focus that question, or even abandon the question for another.**
 
-## Literature Review
+**Literature Review**
+
 During your literature review, you should:
 
 1. Identify primary source articles that address the association that you have decided to examine
@@ -40,7 +39,7 @@ Caraballo, R. S., Novak, S. P., & Asman, K. (2009). Linking quantity and frequen
 
 Chen, K., Kandel, D.,(2002). Relationship between extent of cocaine use and dependence among adolescents and adults in the United States. Drug & Alcohol Dependence. 68, 65-85.
 
-Chen, K., Kandel, D. B., Davies, M. (1997). Relationships between frequency and quantity of marijuana use and last year proxy dependence among adolescents and adults in the United States.Drug & Alcohol Dependence. 46, 53-67.
+Chen, K., Kandel, D. B., Davies, M. (1997). Relationships between frequency and quantity of marijuana use and last year proxy dependence among adolescents and adults in the United States. Drug & Alcohol Dependence. 46, 53-67.
 
 Decker, L., He, J. P., Kalaydjian, A., Swendsen, J., Degenhardt, L., Glantz, M., Merikangas, K. (2008). The importance of timing of transitions for risk of regular smoking and nicotine dependence. Annals of Behavioral Medicine, 36(1), 87-92.
 
@@ -54,7 +53,7 @@ Van De Ven, M. O. M., Greenwood, P. A., Engels, R., Olsson, C. A., & Patton, G. 
 
 Based on my reading of the above articles as well as others, I have noted a few common and interesting themes:
 
-1. While it is true that smoking exposure is a necessary requirement for nicotine dependence, frequency and quantity of smoking are markedly imperfect indices for determining an individual’s probability of exhibiting nicotine dependence (this is true for other drugs as well)
+1. While it is true that smoking exposure is a necessary requirement for nicotine dependence, frequency and quantity of smoking are markedly imperfect indices for determining an individual's probability of exhibiting nicotine dependence (this is true for other drugs as well)
 
 2. The association may differ based on ethnicity, age, and gender (although there is little work on this)
 

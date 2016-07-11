@@ -1,5 +1,5 @@
 {
-    "path" : "~/PDS-BookDown/BookDownTry",
+    "path" : "~/bookdown/inst/examples",
     "sortOrder" : [
         {
             "ascending" : true,
