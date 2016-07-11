@@ -5,4 +5,4 @@ date: "7/11/2016"
 output: html_document
 ---
 
-This is a test. Add some more. Try [this](./BookDownTry/book/chapter.html)
+This is a test. Link to [PDS in bookdown - very beta still](./BookDownTry/book/chapter.html)
