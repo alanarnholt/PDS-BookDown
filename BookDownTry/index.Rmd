@@ -4,7 +4,8 @@ author: "Modified for use with [R,](https://www.r-project.org/) [GitHub,](https:
 date: 'Last updated: `r format(Sys.time(), "%B %d, %Y")`'
 knit: bookdown::render_book
 output:
-  bookdown::gitbook: default
+  bookdown::gitbook: 
+  lib_dir: assets
 documentclass: book
 link-citations: yes
 css: "./CSS/style.css"
