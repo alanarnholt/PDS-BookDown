@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"PDS-bookdown\"\nauthor: \"Alan Arnholt\"\ndate: \"7/11/2016\"\noutput: html_document\n---\n\nThis is a test.",
+    "created" : 1468242463455.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1317205573",
+    "id" : "BEC90C09",
+    "lastKnownWriteTime" : 1468242490,
+    "last_content_update" : 1468242490040,
+    "path" : "~/PDS-BookDown/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
