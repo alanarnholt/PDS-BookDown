@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "---\ntitle: \"PDS-bookdown\"\nauthor: \"Alan Arnholt\"\ndate: \"7/11/2016\"\noutput: html_document\n---\n\nThis is a test. Add some more.",
+    "contents" : "---\ntitle: \"PDS-bookdown\"\nauthor: \"Alan Arnholt\"\ndate: \"7/11/2016\"\noutput: html_document\n---\n\nThis is a test. Add some more. Try [this](./BookDownTry/_book/chapter.html)",
     "created" : 1468242463455.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "188923017",
+    "hash" : "3953781307",
     "id" : "BEC90C09",
-    "lastKnownWriteTime" : 1468242742,
-    "last_content_update" : 1468242742939,
+    "lastKnownWriteTime" : 1468243310,
+    "last_content_update" : 1468243310762,
     "path" : "~/PDS-BookDown/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
