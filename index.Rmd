@@ -5,4 +5,4 @@ date: "7/11/2016"
 output: html_document
 ---
 
-The [bookdown](https://bookdown.org/yihui/bookdown/) version of [Passion Driven Statistics](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/Book/overview.html)
+The [bookdown](https://bookdown.org/yihui/bookdown/) version of [Passion Driven Statistics](https://alanarnholt.github.io/PDS-BookDown/BookDownTry/book/overview.html)
