@@ -8,3 +8,6 @@ bookdown::gitbook:
         <li><a href="./">Passion Driven Statistics</a></li>
       after: |
         <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+    edit:
+      link: https://github.com/alanarnholt/PDS-BookDown/edit/master/BookDownTry/%s
+      text: "Edit"

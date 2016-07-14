@@ -8,7 +8,7 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
-  <meta name="generator" content="bookdown 0.0.80 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
@@ -175,24 +175,24 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Please watch the <a href="http://passiondrivenstatistics.com/2015/04/21/chapter-17-continued-rough-edit/">Chapter 17 Video</a>.</p>
 <p>Suppose the <strong>observational study</strong> described on the previous page were carried out, and researchers determined that the percentage succeeding with the combination drug/therapy method was highest, while the percentage succeeding with neither therapy nor drugs was lowest. In other words, suppose there is clear evidence of an association between method used and success rate. Could they then conclude that the combination drug/therapy method causes success more than using neither therapy nor a drug?</p>
 <div class="figure">
-<img src="graphics/image004.gif" alt="" />
+<img src="graphics/image004.gif" />
 
 </div>
 <p>It is at precisely this point that we confront the underlying weakness of most observational studies: some members of the sample have opted for certain values of the explanatory variable (method of quitting), while others have opted for other values. It could be that those individuals may be different in additional ways that would also play a role in the response of interest. For instance, suppose women are more likely to choose certain methods to quit, and suppose women in general tend to quit more successfully than men. The data would make it appear that the method itself were responsible for success, whereas in truth it may just be that being female is the reason for success. We can express this scenario in terms of the key variables involved. In addition to the explanatory variable (method) and the response variable (success or failure), a third, <strong>lurking</strong> variable (gender) is tied in (or <strong>confounded</strong>) with the explanatory variable’s values, and may itself cause the response to be success or failure. The following diagram illustrates this situation.</p>
 <div class="figure">
-<img src="graphics/image005.gif" alt="" />
+<img src="graphics/image005.gif" />
 
 </div>
 <p>Since the difficulty arises because of the lurking variable’s values being tied in with those of the explanatory variable, one way to attempt to unravel the true nature of the relationship between explanatory and response variables is to separate out the effects of the lurking variable. In general, we <strong>control</strong> for the effects of a lurking variable by separately studying groups that are similar with respect to this variable.</p>
 <p>We could control for the lurking variable “gender” by studying women and men separately. Then, if both women and men who chose one method have higher success rates than those opting for another method, we would be closer to producing evidence of causation.</p>
 <div class="figure">
-<img src="graphics/image006.gif" alt="" />
+<img src="graphics/image006.gif" />
 
 </div>
 <p>The diagram above demonstrates how straightforward it is to control for the lurking variable gender.</p>
 <p>Notice that we did not claim that controlling for gender would allow us to make a definite claim of causation, only that we would be closer to establishing a causal connection. This is due to the fact that other lurking variables may also be involved, such as the level of the participants’ desire to quit. Specifically, those who have chosen to use the drug/therapy method may already be the ones who are most determined to succeed, while those who have chosen to quit without investing in drugs or therapy may, from the outset, be less committed to quitting. The following diagram illustrates this scenario.</p>
 <div class="figure">
-<img src="graphics/image007.gif" alt="" />
+<img src="graphics/image007.gif" />
 
 </div>
 <p>To attempt to control for this lurking variable, we could interview the individuals at the outset in order to rate their desire to quit on a scale of 1 (weakest) to 5 (strongest), and study the relationship between method and success separately for each of the five groups. But desire to quit is obviously a very subjective thing, difficult to assign a specific number to. Realistically, we may be unable to effectively control for the lurking variable “desire to quit.”</p>
@@ -203,14 +203,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><strong>Fire Damage</strong></p>
 <p>The scatterplot below illustrates how the number of firefighters sent to fires (<span class="math inline">\(X\)</span>) is related to the amount of damage caused by fires (<span class="math inline">\(Y\)</span>) in a certain city.</p>
 <div class="figure">
-<img src="graphics/causation2.gif" alt="" />
+<img src="graphics/causation2.gif" />
 
 </div>
 <p>The scatterplot clearly displays a fairly strong (slightly curved) <strong>positive</strong> relationship between the two variables. Would it, then, be reasonable to conclude that sending more firefighters to a fire causes more damage, or that the city should send fewer firefighters to a fire, in order to decrease the amount of damage done by the fire? Of course not! So what is going on here?</p>
 <p>There is a <strong>third variable in the background</strong>—the seriousness of the fire—that is responsible for the observed relationship. More serious fires require more firefighters, and also cause more damage.</p>
 <p>The following figure will help you visualize this situation:</p>
 <div class="figure">
-<img src="graphics/causation3.gif" alt="" />
+<img src="graphics/causation3.gif" />
 
 </div>
 <p>Here, the seriousness of the fire is a confounding variable. In statistics, a confounding variable (also confounding factor, lurking variable, a confound, or confounder) is an extraneous variable that is associated (positively or negatively) with both the explanatory variable and response variable. We need to “control for” these factors to avoid incorrectly believing that the response variable is associated with the explanatory variable. Confounding is a major threat to the validity of inferences made about statistical associations. In the case of a confounding variable, the observed association with the response variable should be attributed to the confounder rather than the explanatory variable. In science, we test for confounders by including these “3rd variables” in our statistical models that may explain the association of interest. In other words, we want to demonstrate that our association of interest is significant even after controlling for potential confounders.</p>

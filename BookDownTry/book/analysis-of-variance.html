@@ -8,7 +8,7 @@
   <title>Passion Driven Statistics</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
-  <meta name="generator" content="bookdown 0.0.80 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
 
   <meta property="og:title" content="Passion Driven Statistics" />
   <meta property="og:type" content="book" />
@@ -186,19 +186,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 <p>It makes sense that the inference about the relationship between year and GPA has to be based on some kind of comparison of these four means. If we infer that these four means are not all equal (i.e., that there are some differences in GPA across years in college) then that’s equivalent to saying GPA is related to year in college. Let’s summarize this example with a figure:</p>
 <div class="figure">
-<img src="graphics/anova1.jpg" alt="" />
+<img src="graphics/anova1.jpg" />
 
 </div>
 <p>In general, then, making inferences about the relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> in Case <span class="math inline">\(C\rightarrow Q\)</span> boils down to comparing the means of <span class="math inline">\(Y\)</span> in the sub-populations, which are created by the categories defined in <span class="math inline">\(X\)</span> (say <span class="math inline">\(k\)</span> categories). The following figure summarizes this:</p>
 <div class="figure">
-<img src="graphics/anova2.jpg" alt="" />
+<img src="graphics/anova2.jpg" />
 
 </div>
 <p>The inferential method for comparing means is called Analysis of Variance (abbreviated as ANOVA), and the test associated with this method is called the ANOVA F-test. We will first present our leading example, and then introduce the ANOVA F-test by going through its 4 steps, illustrating each one using the example.</p>
 <p><em>Is “academic frustration” related to major?</em></p>
 <p>A college dean believes that students with different majors may experience different levels of academic frustration. Random samples of size 35 of Business, English, Mathematics, and Psychology majors are asked to rate their level of academic frustration on a scale of 1 (lowest) to 20 (highest).</p>
 <div class="figure">
-<img src="graphics/frustrate.jpg" alt="" />
+<img src="graphics/frustrate.jpg" />
 
 </div>
 <p>The figure highlights that examining the relationship between major (<span class="math inline">\(X\)</span>) and frustration level (<span class="math inline">\(Y\)</span>) amounts to comparing the mean frustration levels (<span class="math inline">\(\mu_1, \mu_2,\mu_3,\mu_4\)</span>) among the four majors defined by <span class="math inline">\(X\)</span>.</p>
@@ -210,7 +210,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>As we mentioned earlier, here we have just one alternative hypothesis, which claims that there is a relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. In terms of the means <span class="math inline">\(\mu_1, \mu_2,\ldots,\mu_k\)</span> it simply says the opposite of the alternative, that not all the means are equal, and we simply write: <span class="math inline">\(H_a:\)</span> not all the <span class="math inline">\(\mu\)</span>’s are equal.</p>
 <p>Recall our “Is academic frustration related to major?” example:</p>
 <div class="figure">
-<img src="graphics/anova3.jpg" alt="" />
+<img src="graphics/anova3.jpg" />
 
 </div>
 <p><strong>Review: True or False</strong></p>
@@ -226,7 +226,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2><span class="header-section-number">11.2</span> The Idea Behind the ANOVA F-Test</h2>
 <p>Let’s think about how we would go about testing whether the population means <span class="math inline">\(\mu_1, \mu_2,\mu_3,\mu_4\)</span> are equal. It seems as if the best we could do is to calculate their point estimates—the sample mean in each of our 4 samples (denote them by <span class="math inline">\(\bar{x}_1,\bar{x}_2,\bar{x}_3,\bar{x}_4)\)</span>,</p>
 <div class="figure">
-<img src="graphics/anova4.jpg" alt="" />
+<img src="graphics/anova4.jpg" />
 
 </div>
 <p>and see how far apart these sample means are, or, in other words, measure the variation between the sample means. If we find that the four sample means are not all close together, we’ll say that we have evidence against <span class="math inline">\(H_0\)</span>, and otherwise, if they are close together, we’ll say that we do not have evidence against <span class="math inline">\(H_0\)</span>. This seems quite simple, but is this enough? Let’s see.</p>
@@ -267,7 +267,7 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <p><strong>Did I Get This?</strong></p>
 <p>Consider the following generic situation:</p>
 <div class="figure">
-<img src="graphics/anova5.jpg" alt="" />
+<img src="graphics/anova5.jpg" />
 
 </div>
 <p>where we’re testing:</p>
